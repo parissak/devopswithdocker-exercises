@@ -73,6 +73,14 @@ You found the correct password. Secret message is:
 ```
 
 
+## 1.7 Two line Dockerfile
+https://github.com/parissak/devopswithdocker-exercises/tree/main/Part1/1.7
+
+
+## 1.8 Image for script
+https://github.com/parissak/devopswithdocker-exercises/tree/main/Part1/1.8
+
+
 ## 1.9 Volumes
 ```
 $ sudo mkdir mydir && sudo touch mydir/log.txt
@@ -84,6 +92,21 @@ $ docker run -v $(pwd)/mydir/log.txt:/usr/src/app/text.log devopsdockeruh/simple
 ```
 $ docker run -p 8080:8080 devopsdockeruh/simple-web-service server
 ```
+
+## 1.11 Spring
+https://github.com/parissak/devopswithdocker-exercises/tree/main/Part1/1.11
+
+
+## 1.12 Hello, frontend!
+https://github.com/parissak/devopswithdocker-exercises/tree/main/Part1/1.12
+
+
+## 1.13 Hello, backend!
+https://github.com/parissak/devopswithdocker-exercises/tree/main/Part1/1.13
+
+
+## 1.14 Environment
+https://github.com/parissak/devopswithdocker-exercises/tree/main/Part1/1.14
 
 
 ## 1.16 Heroku
