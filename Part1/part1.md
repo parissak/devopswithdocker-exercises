@@ -71,3 +71,23 @@ Give me the password: basics
 You found the correct password. Secret message is:
 "This is the secret message
 ```
+
+
+## 1.9 Volumes
+```
+$ sudo mkdir mydir && sudo touch mydir/log.txt
+$ docker run -v $(pwd)/mydir/log.txt:/usr/src/app/text.log devopsdockeruh/simple-web-service
+```
+
+
+## 1.10 Ports open
+```
+$ docker run -p 8080:8080 devopsdockeruh/simple-web-service server
+```
+
+
+## 1.16 Heroku
+```
+https://hidden-badlands-23720.herokuapp.com/presses/new
+```
+
