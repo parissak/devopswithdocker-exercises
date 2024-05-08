@@ -1,0 +1,29 @@
+services:
+  frontend:
+    container_name: frontend
+    image: frontend
+    ports:
+      - 5000:5000
+
+  backend:
+    container_name: backend
+    image: backend
+    environment:
+      - REDIS_HOST=redis-cache
+      - POSTGRES_HOST=postgres
+    ports:
+      - 8080:8080
+
+  redis:
+    container_name: redis-cache
+    image: redis
+    ports:
+      - 6379:6379
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./database:/var/lib/postgresql/data
