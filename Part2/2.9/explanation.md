@@ -1,0 +1,1 @@
+In the backend’s Dockerfile, I removed the `ENV REQUEST_ORIGIN=http://backend:5000`. In the frontend’s Dockerfile, I changed the `ENV REACT_APP_BACKEND_URL` to point to `http://localhost/api`. I also removed the port mappings for backend and frontend from the compose file.
